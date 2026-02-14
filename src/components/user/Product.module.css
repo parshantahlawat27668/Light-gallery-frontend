@@ -1,0 +1,55 @@
+.main {
+  flex: 0 0 auto;            /* ✅ Don’t grow or shrink */
+  width: 220px;              /* ✅ Fixed width */
+  /* height: 320px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Titillium Web', sans-serif;
+  box-sizing: border-box;    /* ✅ Prevent padding/margin from breaking layout */
+  position: relative;
+  /* background-color: yellow;  */
+}
+
+
+.main p {
+    text-align: center;
+    margin: 3px 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.productImg {
+    object-fit: cover;
+    width: 220px;
+    height: 180px;
+    margin-bottom: 5px;
+}
+.wishlistIcon{
+  position: absolute;
+  top:5px;
+  right: 5px;
+  cursor: pointer;
+  padding:5px;
+}
+.wishlistIcon:hover{
+  scale: 1.1;
+}
+
+@media screen and (max-width: 770px){
+  .main{
+    width: 150px;
+  }
+  .productImg {
+    width: 160px;
+    height: 150px;
+  }
+  .main p{
+    font-size: 13px;
+  }
+  .wishlistIcon{
+  top:3px;
+  right: 1px;
+}
+}

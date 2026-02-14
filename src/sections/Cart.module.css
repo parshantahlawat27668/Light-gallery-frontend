@@ -1,0 +1,81 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 15px 0px; */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.heading {
+    font-family: Righteous;
+    font-size: 22px;
+}
+.cartProductsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-weight: 500;
+    /* max-height: 300px; */
+    /* overflow: auto; */
+}
+.titlesRow{
+    display: flex;
+    width: 100%;
+    font-weight: 700 !important;
+    margin-bottom: 22px;
+    position: sticky;
+    top:0px;
+    background-color: white;
+}
+.productRow{
+    display: flex;
+    /* align-items: center; */
+}
+.cel{
+    padding: 5px 3px;
+}
+.product{
+flex-basis: 50%;
+display: flex;
+align-items: center;
+gap:10px;
+}
+.quantity{
+flex-basis: 30%;
+text-align: center;
+
+}
+.total{
+text-align: center;
+flex-basis: 20%;
+}
+.checkOutContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 14px;
+}
+.checkOutBtn{
+    padding: 4px 25px;
+    cursor: pointer;
+}
+.productImage{
+    width: 70px;
+}
+.remove{
+    padding:6px 1px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .productImage{
+        width: 50px;
+    }
+    .product, .cel{
+        font-size: 13px;
+    }
+    .cartProductsContainer{
+        width: 90%;
+    }
+}   

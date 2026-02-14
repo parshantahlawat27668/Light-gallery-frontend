@@ -1,0 +1,67 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(225, 223, 223);
+    width: 600px;
+    height: fit-content;
+    margin-top: 60px ;
+    padding: 20px 35px;
+    border-radius: 8px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    align-items: center;
+    gap:10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.group{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    position: relative;
+}
+.editOpt{
+position:absolute;
+right:0px;
+cursor: pointer;
+padding: 2px;
+}
+.group h6{
+    font-size: 18px;
+    margin: 0px;
+}
+.btn{
+    margin-bottom: 50px;
+    margin-top: 8px;
+    padding: 2px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btnContainer{
+    width: 670px;
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 200px;
+    }
+    .userIcon{
+        width: 30px;
+    }
+    .header p{
+        font-size: 15px;
+    }
+}
