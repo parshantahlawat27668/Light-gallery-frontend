@@ -12,9 +12,10 @@
     width: 100vw;
     overflow: hidden;
     position: relative;
+    background-color: black;
 }
     .formContainer{
-        background-color: rgba(0, 0, 0, 0.399);
+        background-color: rgb(29, 29, 29);
         height: 100%;
         width: 100%;
         display: flex;

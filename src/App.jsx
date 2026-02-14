@@ -34,7 +34,7 @@ const App = () => {
   useEffect(()=>{
     const getUser = async ()=>{
      const res =  await api.get(`/user/my-profile`);
-     if(!res.data.data.user){
+     if(!res?.data?.data?.user){
       return <Navigate to="/auth/login"/>
      }
      dispatch(setUser(res.data.data.user));
