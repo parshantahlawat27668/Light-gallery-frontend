@@ -20,6 +20,7 @@ const Login = () => {
   }
   const loginHandler = async(e) => {
     e.preventDefault();
+    console.log(import.meta.env.VITE_API_BASE_URL);
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
      api.post("/user/login",data)

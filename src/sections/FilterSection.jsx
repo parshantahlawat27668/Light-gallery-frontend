@@ -118,6 +118,7 @@ const FilterSection = () => {
 
   useEffect(() => {
     setCategory(categoryParams || "All");
+    console.log(categoryParams);
   }, [categoryParams]);
 
   useEffect(() => {

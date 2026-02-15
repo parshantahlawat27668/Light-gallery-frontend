@@ -4,12 +4,12 @@ import CategoryCard from '../components/user/CategoryCard'
 import { RiArrowLeftWideLine, RiArrowRightWideFill } from 'react-icons/ri'
 const CategorySection = () => {
   const categories = [
-  { id: 1, category: "Indoor Lights" },
-  { id: 2, category: "Outdoor Lights" },
-  { id: 3, category: "Decorative Lights" },
-  { id: 4, category: "Smart Lights" },
+  { id: 1, category: "Indoor lights" },
+  { id: 2, category: "Outdoor lights" },
+  { id: 3, category: "Decorative lights" },
+  { id: 4, category: "Smart lights" },
   { id: 5, category: "Lamps" },
-  { id: 6, category: "Bulb & Tube Lights" },
+  { id: 6, category: "Basic lights" },
 ];
 
   return (
