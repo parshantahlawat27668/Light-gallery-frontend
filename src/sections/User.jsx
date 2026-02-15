@@ -12,7 +12,6 @@ const User = () => {
   const logoutHandler = ()=>{
    api.post("/user/logout", {})
    .then((res)=>{
-    console.log(res);
     toast.success(res.data.message);
     dispatch(removeUser());
    })
