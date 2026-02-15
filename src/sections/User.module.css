@@ -58,6 +58,9 @@ padding: 2px;
     .container{
         width: 200px;
     }
+    .btnContainer{
+        width: 270px;
+    }
     .userIcon{
         width: 30px;
     }

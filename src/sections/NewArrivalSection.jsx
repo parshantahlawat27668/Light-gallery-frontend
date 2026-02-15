@@ -9,7 +9,7 @@ import { selectNewArrivals } from '../store/selectors/productsSelectors';
 const NewArrivalSection = () => {
   const newArrivalProducts = useSelector((state)=>selectNewArrivals(state,10));
   const scrollRef = useRef(null);
-  const scrollAmount = 200; // Customize based on card width
+  const scrollAmount = 100; // Customize based on card width
 
   const scrollRight = () => {
     const container = scrollRef.current;

@@ -8,7 +8,7 @@ import { selectBestSellers } from '../store/selectors/productsSelectors';
 const BestSellersSection = () => {
   const bestSellerProducts = useSelector((state)=>selectBestSellers(state,10));
   const scrollRef = useRef(null);
-  const scrollAmount = 200; // Customize based on card width
+  const scrollAmount = 100; // Customize based on card width
 
   const scrollRight = () => {
     const container = scrollRef.current;
